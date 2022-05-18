@@ -30,7 +30,7 @@
 		z-index:100;
 	}
 	.title {
-		height:100vh;
+		height:auto 100%;
 		color:black;
 		background-color:darkgoldenrod;
 /*		background-image:url('https://i.pinimg.com/originals/7f/43/1c/7f431c9e6991b1a83d79e359dc09c99d.gif');*/
@@ -40,7 +40,7 @@
 		background-size: auto 100%;
 	}
 	.title h1 {
-		font-size:5em;
+		font-size:4em;
 	}
 	.title h2 {
 		font-size:36px;
@@ -57,7 +57,7 @@
 	}
 	.header h1{
 		font-family: 'Saira Semi Condensed', sans-serif;
-		font-weight:800;
+		font-weight:600;
 		margin:0;
 	}
 	.header h2 {
@@ -118,7 +118,7 @@
 		font-style:italic;
 	}
 	.sticky h1 {
-		width:100%;
+		width:auto 100%;
 		font-size:3em;
 	}
 	.sticky h2 {
@@ -128,15 +128,15 @@
 	}
 	.center_aligner {
 		overflow:none;
-		width:100%;
+		width:auto 100%;
 		display:flex;
-		align-items:center;
-		justify-content:center;
+		align-items:auto center;
+		justify-content:auto center;
 		margin:2% 0%;
 	}
 	iframe {
 		border:0.5em solid black;
-		width:900px;
+		width: auto 100%;
 		height:500px;
 	}
 	.tableauPlaceholder{
@@ -154,10 +154,10 @@
 		color:#darkgoldenrod;
 	}
 	.small {
-		width:30%;
+		width: auto 30%;
 	}
 	.large {
-		width:80%;
+		width:auto 80%;
 		display:block;
 	}
 	@keyframes fadeIn {
@@ -188,7 +188,7 @@
 			font-size:5em;
 		}
 		.leftside {
-			width: 85%;
+			width: auto 85%;
     		padding: 5% 10% 5% 5%;
 		}
 		.small {
@@ -220,8 +220,8 @@
 <!-- text -->
 <div class='header title step'>
 	<div class='aligner'>
-		<h1>IMDB Battle of the Sexes</h1>
-		<h2>Are all movies created equal?</h2>	
+		<h1><p>IMDB Battle of the Sexes</h1>
+		<h3>Are all movies created equal?</h3>	
 	</div>
 </div>
 
@@ -236,21 +236,30 @@
 	  
 </div>
 
+<div class='text'>
+	<h3>Overall, males dominate the number of votes provided over time.</h3>
+	  
+</div>
 
 <!-- image 1 -->
 <div class='center_aligner'>
+
 	<!-- change line 120 if you want to change the size of the image -->
-		<div class='caption'>Overall, males dominate the number of votes provided over time.</div><img class='medium' src="images/votetotals.jpg"> 	
+		<div class='caption'></div><img class='medium' src="images/votetotals.jpg"> 	
 </div>
 <!-- caption for image 1 -->
 <div class='center_aligner'>
 	
 </div>
+<div class='text'>
+	<h3>However, females consistently rate movies higher</h3>
+	  
+</div>
 
 <!-- image 1 -->
 <div class='center_aligner'>
 	<!-- change line 120 if you want to change the size of the image -->
-	<div class='caption'>However, females consistently rate movies higher</div>	<img class='medium' src="images/ratingaverages.jpg"> 	
+	</div>	<img class='medium' src="images/ratingaverages.jpg"> 	
 </div>
 <!-- caption for image 1 -->
 <div class='center_aligner'>
@@ -275,8 +284,9 @@
 <p></p>
 	<p></p>
 <p></p>
+<div class='center_aligner'>
 <p>Enter the Marvel Cinematic Universe (MCU) - but first, a few facts:</p>
-<p></p>
+<p></p></div>
 	<p></p>
 <p></p>
 <p></p>
@@ -305,10 +315,10 @@
 </div>
 
 
-
+<h1>
 <p> Action and superhero movies might traditionally be seen as appealing to male audiences, how would those be rated by males and females?</p>
 
-<p></p>
+<p></p></h1>
 <!-- image 2 -->
 <div class='center_aligner'>
 	<!-- change line 120 if you want to change the size of the image -->
@@ -379,7 +389,7 @@ scroller2
     	if(response.index==0){
     		count(1,23,1,'Movies','between 2008 and 2019','dynamic_sticky1')
     	} else if (response.index==1){
-    		count(1,8,1,'US Gross More than','Billion','dynamic_sticky1')
+    		count(1,8,1,'US Gross','Billion','dynamic_sticky1')
     	} else if (response.index==2){
     		count(1,33,1,'Rating','percent higher','dynamic_sticky1')
     	}
